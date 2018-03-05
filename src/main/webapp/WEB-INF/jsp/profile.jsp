@@ -27,10 +27,10 @@ li {
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.jsp"><img src="logo1.png" height="42" width="42" >   Media Library</a>
+      <a class="navbar-brand" href="/"><img src="logo1.png" height="42" width="42" >   Media Library</a>
     </div>
     <ul class="nav navbar-nav">
-       <li class="active"><a href="index.jsp">Home</a></li>
+       <li class="active"><a href="/">Home</a></li>
     </ul>
   </div>
 </nav>

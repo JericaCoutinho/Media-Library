@@ -18,7 +18,7 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="navbar-brand" href="index.jsp"><img src="logo1.png" height="42" width="42" >   Media Library</a>
+    <a class="navbar-brand" href="/"><img src="logo1.png" height="42" width="42" >   Media Library</a>
   </li>
   </ul>
   </nav>
