@@ -22,17 +22,18 @@
   </li>
   </ul>
   </nav>
-      
+ 
+  }    
    
 <br>
 <br>
- <form action="/upload" method="post" enctype="multipart/form-data">
+<form action="/upload" method="post" enctype="multipart/form-data">
 <i><b>Upload Post:</b></i><br><input type="file" name="file" id="uploadImage"/>
 <br>
 <br>
-<input type="Submit" id="upload"/> 
+<input type="Submit" id="upload"/>
 
-</form>  
- 
+
+</form>
 </body>
 </html>
