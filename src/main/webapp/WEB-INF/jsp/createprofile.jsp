@@ -12,6 +12,17 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <style>
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid black;
+    padding: 25px;
+    margin: 25px;
+    align: center;
+}
+/* body {
+    background-color: lightgrey;
+} */
 .button {
     background-color: #555555;
     border: none;
@@ -25,7 +36,7 @@
     cursor: pointer;
 }</style>
 </head>
-<body>
+<body bgcolor="#E0E0E0">
 <nav class="navbar navbar-dark bg-dark">
   
 
@@ -35,18 +46,22 @@
   </li>
   </ul>
   </nav>
- 
-  }    
+      
    
 <br>
 <br>
-<form action="/upload" method="post" enctype="multipart/form-data">
-<i><b>Upload Post:</b></i><br><input type="file" name="file" id="uploadImage"/>
+<h1><font color="red"><b><center>CREATE YOUR PROFILE</center></b></font></h1><br>
+ <div style="width:800px; margin:0 auto;"><center><form action="/upload" method="post" enctype="multipart/form-data">
+<b><center><font size="6">Upload profile Photo:</font></b><br><input type="file" name="file" id="uploadImage"/></center>
 <br>
 <br>
-<input class="button" type="Submit" id="upload"/>
-
-
-</form>
+<b><center><font size="6">Enter Description:</font></b><br><input type="text" name="desc" /></center>
+<br>
+<br>
+<center><input type="Submit" class="button" id="upload"/> </center>
+</p>
+</form>  
+ </center>
+ </div>
 </body>
 </html>

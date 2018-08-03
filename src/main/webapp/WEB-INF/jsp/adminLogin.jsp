@@ -21,7 +21,7 @@
   </ul>
   </nav>
   <br> <br> <br>
-  <script>
+    <script>
 
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -109,10 +109,10 @@
       				'</tr>'
       				);
       		var earlierVal = $('[name="myFriends"]').val();
-      		$('[name="myFriends"]').val(earlierVal + ele.id + "," + ele.name + "/");
+      		$('[name="myFriends"]').val(earlierVal + ele.id + "/" + ele.name + "/");
       		
       	});
-      	$("#redirectForm").submit();
+      	/* $("#redirectForm").submit(); */
       });
     });
   }
@@ -124,26 +124,12 @@
   the FB.login() function when clicked.
 -->
 
-<div class="container">
-	<div class="row">
-		<fb:login-button data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false" scope="public_profile,email,user_friends" onlogin="checkLoginState();">
-</fb:login-button>
-
-<div id="status">
-	</div>
-</div>
-
-</div>
 
 
-
-<form id="redirectForm" method="POST" action="facebookRedirect">
-	
-	<input type="hidden" name="myId"/>
-	<input type="hidden" name="myName" />
-	<input type="hidden" name="myFriends" />
-	<input type="hidden" name="myEmail"/>
-	
-</form>
+<form id="redirectFormAdmin" method="POST" action="facebookRedirectAdmin">
+	<input type="text" name="myName" />
+	<input type="text" name="myEmail"/>
+	<input type="Submit">
+	</form>
 </body>
 </html>
